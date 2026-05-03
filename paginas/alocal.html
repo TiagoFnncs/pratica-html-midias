@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Áudio do Youtube de uma pasta local</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Garantir que o vídeo mantenha a proporção 16:9 */
+        .video-responsive {
+            position: relative;
+            padding-bottom: 56.25%; /* Proporção 16:9 */
+            height: 0;
+            overflow: hidden;
+        }
+        .video-responsive video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+    <div class="container mx-auto p-4 flex flex-col items-center">
+        <h1 class="text-2xl font-bold mb-6 text-center">Áudio do Youtube de uma pasta local</h1>
+        <!-- Início do áudio do youtube de uma pasta local
+             Altere o local da pasta em que o áudio está salvo, altere somente "../audios/nomedoaudio.m4a" -->
+        <audio controls>
+            <source src="../audios/audio1.m4a" type="audio/mpeg">
+            Seu navegador não suporta o elemento do áudio.
+        </audio>
+        <!-- Fim do áudio do youtube de uma pasta local -->
+
+    </div>
+
+</body>
+</html>
